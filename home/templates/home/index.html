@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+       
+        <link rel="stylesheet" href="static/home/css/bootstrap.css">
+        <link rel="stylesheet" href="static/home/css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="static/home/css/custom-styles.css">
+        <link rel="stylesheet" href="static/home/css/font-awesome.css">
+        <link rel="stylesheet" href="static/home/css/font-awesome-ie7.css">
+
+        <script src="static/home/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+            <div class="header-wrapper">
+                <div class="site-header">
+                    <div class="container">
+                        <a href="/"> <div class="site-name">
+                            <h1>DavidPenott</h1>
+                        </div></a>
+                    </div>
+                    <div class="container">
+                        <div class="menu">
+                            <div class="navbar">
+                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                    <i class="fw-icon-th-list"></i>
+                                </a>
+                                <div class="nav-collapse collapse">
+                                    <ul class="nav">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="/about">About</a></li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="/portafolio">Portfolio</a></li>
+                                        <li><a href="/contact">Contact</a></li>
+                                    </ul>
+                                </div><!--/.nav-collapse -->
+                            </div>
+                            <div class="mini-menu">
+            <label>
+          <select class="selectnav">
+            <option value="#" selected="">Home</option>
+            <option value="#">About</option>
+            <option value="#">Services</option>
+            <option value="#">Work</option>
+            <option value="#">Contact</option>
+          </select>
+          </label>
+          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                <div class="banner">
+                    <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <img src="static/home/img/banner-image.png" alt="">
+                                <div class="carousel-caption">
+                                    <h1>David Penott</h1>
+                                    <h2>Computer Engineering Student</h2>
+                                  <a href="#" class="btn">Python Developer</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="static/home/img/banner-image2.png" alt="">
+                                <div class="carousel-caption">
+                                  <h1>David Penott</h1>
+                                    <h2>Computer Engineering Student</h2>
+                                  <a href="#" class="btn">Web Developer</a>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <img src="static/home/img/banner-image3.png" alt="">
+                                <div class="carousel-caption">
+                                  <h1>David Penott</h1>
+                                    <h2>Computer Engineering Student</h2>
+                                  <a href="#" class="btn">Ethical Hacking</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-slide="prev" href="#myCarousel" class="carousel-control left"><i class="fw-icon-chevron-left"></i></a>
+                        <a data-slide="next" href="#myCarousel" class="carousel-control right"><i class="fw-icon-chevron-right"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="featured-blocks">
+                    <div class="row-fluid">
+                        <div class="span3">
+                            <div class="block v-divider border">
+                                <i class="fw-icon-download"></i>
+                                <h1>Download Résumé</h1>
+                                <p class="last"><a href="http://davidpenott.esy.es/David_CV.docx">Here</a></p>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="block v-divider border">
+                                <i class="fw-icon-facebook-sign"></i>
+                                <h1>Profile</h1>
+                                <p class="last"><a href="https://facebook.com/DavidPenottr">Here</a></p>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="block v-divider border">
+                                <i class="fw-icon-instagram"></i>
+                                <h1>My photos</h1>
+                                <p class="last"><a href="https://www.instagram.com/viewsofamadman">Here</a> or <a href="https://www.instagram.com/davidpenott">here</a></p>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="block no-border">
+                                <i class="fw-icon-comments-alt"></i>
+                                <h1>Contact</h1>
+                                <p class="last"><a href="mailto:alejandropenott@gmail.com">Send email</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="row-fluid">
+                        <div class="span9">
+                            <div class="row-fluid">{% for post in posts %}
+                                <div class="span4">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <div class="general-posts">
+                                                <div class="user-info">
+                                                    <h1>{{ post.title }}</h1>
+                                                    {% load static %}
+                                                    <img src="{% static post.image_for_preview %}" alt="" class="image-spacing">
+                                                    <p class="no-space">{{ post.text|linebreaksbr|truncatechars:40 }}</p>
+                                                 </div>
+                                                 <div class="read-more">
+                                                    <a href="{% url 'home:detail' post.id %}">read more <i class="fw-icon-arrow-right"></i></a>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div> {% endfor %}
+                            </div>    
+                        </div>
+                        
+
+                        <div class="span3">
+                            <div class="sidebar">
+                                <h1>search</h1>
+                                <div class="input-append">
+  <input class="span12" id="appendedInput" type="text">
+  <span class="add-on"><i class="fw-icon-search"></i></span>
+</div>
+                                
+                                
+                            </div>
+                            <div class="sidebar">
+                                <h1>Skills</h1>
+                                <ul>
+                                    <li><a href="#">Python</a></li>
+                                    <li><a href="#">Reverse Engineering</a></li>
+                                    <li><a href="#">Logical ideas</a></li>
+                                    <li><a href="#">Web-Development</a></li>
+                                    <li><a href="#">Ethical Hacking</a></li>
+                                    <li class="no-border"><a href="#">I speak Spanish and English. I'm learning Chinese.</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar no-space">
+                                <h1>Experience</h1>
+                                <div class="sidebar-posts">
+                                    <i class="fw-icon-desktop"></i>
+                                    <h1>IT - Developer</h1>
+                                    <p>|Software - Web| Developer and set up of computers and network. SabueS.O.S - Santiago, Chile 2016</p>
+                                </div>
+                                <div class="sidebar-posts">
+                                    <i class="fw-icon-linux"></i>
+                                    <h1>Python Developer for Script</h1>
+                                    <p>Freelance. Upwork - 2016</p>
+                                </div>
+                                <div class="sidebar-posts no-border">
+                                    <i class="fw-icon-windows"></i>
+                                    <h1>Technical Support</h1>
+                                    <p>Setting up networks, technical support for customers and troubleshooting. Wifi Las Isletas - 2014</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="footer-links">
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="copy-rights">
+                                    <span>Copyright (c) 2017</span><br>All rights reserved. 
+                               </div>
+                            </div>
+                            <div class="span3">
+                                <div class="copy-rights">
+                                    <span>Designed by: </span><br><a href="davidpenott.esy.es">David Ramos</a>
+                               </div>
+                            </div>
+                            <div class="span3">
+                                <div class="copy-rights">
+                                    <span>Images From:  </span><br>
+                                    <a href="http://www.instragram.com/viewsofamadman">Views of a Mad Man </a>| <a href="http://www.instagram.com/gustavob97">Gustavo Behrens</a> 
+                               </div>
+                            </div>
+                            <div class="span3">
+                                <div class="copy-rights">
+                                    <span>Contact  </span><br>
+                                    <a href="#">alejandropenott@gmail.com</a> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-footer">
+                        <div class="row-fluid">
+                        <div class="social span3">
+                            <ul>
+                                <li><a href="#"><i class="fw-icon-facebook-sign"></i></a></li>
+                                <li><a href="#"><i class="fw-icon-twitter-sign"></i></a></li>
+                                <li><a href="#"><i class="fw-icon-linkedin-sign"></i></a></li>
+                                <li><a href="#"><i class="fw-icon-pinterest-sign"></i></a></li>
+                                <li><a href="#"><i class="fw-icon-phone-sign"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu span9">
+                            <ul>
+                                <li><a href="#">Home :: </a></li>
+                                <li><a href="#"> About :: </a></li>
+                                <li><a href="#"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+       <script src="static/home/js/jquery-1.9.1.js"></script> 
+<script src="static/home/js/bootstrap.js"></script>
+<script>
+$('#myCarousel').carousel({
+    interval: 1800
+});
+</script>
+    </body>
+</html>
